@@ -26,8 +26,8 @@
 :root {
     --tipo-grafia: trueno;
     --tipo-texto: trueno-regular;
-    --tipo-deco--: lacquer;
-    --acen-color--: #DA2424;
+    --tipo-deco: lacquer;
+    --acen-color: #DA2424;
     --dark-color: #000000;
     --light-color: #ffffff;
 }
@@ -237,7 +237,7 @@ header a:hover {
 }
 
 .hero-content .btn-cta {
-    background-color: var(--acen-color--);
+    background-color: var(--acen-color);
     color: var(--light-color);
     font-family: var(--tipo-texto);
     font-size: 16px;
@@ -307,7 +307,7 @@ header a:hover {
 
 /* TIRA DE SOBRE NOSOTROS */
 .sobrenosotros {
-    background-color: var(--acen-color--);
+    background-color: var(--acen-color);
     color: var(--dark-color);
     overflow: hidden;
     padding: 30px 0;
@@ -316,7 +316,7 @@ header a:hover {
 
 
 .sobrenosotros-track span {
-    font-family: var(--tipo-deco--);
+    font-family: var(--tipo-deco);
     font-size: 30px;
     letter-spacing: 2px;
     color: var(--light-color);
