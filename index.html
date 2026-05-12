@@ -4,62 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <div class="compra-entradas">
         <a href="">Compra tus entradas</a>
     </div>
+
     <header>
         <img class="LOGO" src="media/img/LOGO_CANAL.webp" alt="Logo">
+
+        <!-- Menú desktop -->
         <nav class="nav-desktop">
             <ul class="menu-desktop">
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Artistas</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Tickets</a></li>
                 <li>
-                    <a href="#">Sobre nosotros</a>
-                </li>                
-                <li>
-                    <a href="#">Artistas</a>
-                </li>                
-                <li>
-                    <a href="#">Tienda</a>
+                    <a href=""><img class="carrito_compra" src="media/img/icono_compra.webp" alt="carrito_compra"></a>
                 </li>
                 <li>
-                    <a href="">Tickets</a>
-                </li>
-                <li>
-                    <a href="">
-                        <img class="carrito_compra" src="media/img/icono_compra.webp" alt="carrito_compra">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img class="user" src="media/img/icono_user.webp" alt="User">
-                    </a>
+                    <a href=""><img class="user" src="media/img/icono_user.webp" alt="User"></a>
                 </li>
             </ul>
+        </nav>
 
+        <!-- Checkbox, label y nav-mobile son hermanos dentro de header -->
         <input type="checkbox" id="sideMenu" class="side-menu">
         <label class="hamb" for="sideMenu">
             <i class="fa-solid fa-bars"></i>
             <i class="fa-solid fa-xmark"></i>
         </label>
 
-        <!-- Menu movil -->
-         <nav class="nav-mobile">
+        <!-- Menú móvil -->
+        <nav class="nav-mobile">
             <ul class="menu-mobile">
-                <li>
-                    <a href="#">Gallery</a>
-                </li>                
-                <li>
-                    <a href="#">Blog</a>
-                </li>                
-                <li>
-                    <a href="#">About me</a>
-                </li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Artistas</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Tickets</a></li>
             </ul>
         </nav>
     </header>
-    
+
 </body>
 </html>
