@@ -314,17 +314,19 @@ header a:hover {
     white-space: nowrap;
 }
 
-.sobrenosotros-track {
-    display: flex;
-    gap: 60px;
-    animation: sobrenosotros 7s linear infinite;
-}
 
 .sobrenosotros-track span {
     font-family: var(--tipo-deco--);
     font-size: 30px;
     letter-spacing: 2px;
     color: var(--light-color);
+}
+
+/* ANIMACIONES DE LA TIRA SOBRENOSOTROS */
+.sobrenosotros-track {
+    display: flex;
+    gap: 60px;
+    animation: sobrenosotros 6s linear infinite;
 }
 
 @keyframes sobrenosotros {
@@ -342,7 +344,6 @@ header a:hover {
     }
 
     /* HEADER */
-
     .nav-desktop {
         display: none;
     }
@@ -374,8 +375,16 @@ header a:hover {
         width: 40px;
     }
 
-    /* CARRUSEL DE OBRAS */
+    /* TIRA DE OBRAS */
+    .obras-track span {
+        font-size: 13px;
+    }
+    
+    .obras {
+        padding: 8px 0;
+    }
 
+    /* CARRUSEL DE OBRAS */
     .carrusel {
         padding: 40px;
     }
@@ -384,12 +393,26 @@ header a:hover {
         width: 280px;
         height: 200px;
         min-width: 280px;
-        display: flex;
+
     }
 
     .carrusel-track {
         display: flex;
         gap: 50px;
+    }
+
+    /* TORA DE SOBRE NOSOTROS */
+    .sobrenosotros-track span {
+        font-size: 16px;
+    }
+
+    .sobrenosotros-track {
+        display: flex;
+        gap: 40px;
+    }
+    
+    .sobrenosotros {
+        padding: 20px 0;
     }
 }
 
@@ -457,6 +480,15 @@ header a:hover {
         padding: 12px 24px;
     }
 
+    /* TIRA DE OBRAS */
+    .obras-track span {
+        font-size: 11px;
+    }
+    
+    .obras {
+        padding: 6px 0;
+    }
+
     /* CARRUSEL DE OBRAS */
 
     .carrusel {
@@ -473,5 +505,20 @@ header a:hover {
         display: flex;
         gap: 30px;
     }
+
+    /* TIRA DE SOBRE NOSOTROS */
+    .sobrenosotros-track span {
+        font-size: 13px;
+    }
+
+    .sobrenosotros-track {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .sobrenosotros {
+        padding: 15px 0;
+    }
+
 
 }
