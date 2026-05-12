@@ -7,8 +7,8 @@
 
 :root {
     --tipo-grafia: trueno;
-    --tipo-deco--: lacquer
-    --acen-color: #DA2424;
+    --tipo-deco--: lacquer;
+    --acen-color--: #DA2424;
     --dark-color: #000000;
     --light-color: #ffffff;
 }
@@ -218,7 +218,7 @@ header a:hover {
 }
 
 .hero-content .btn-cta {
-    background-color: var(--acen-color);
+    background-color: var(--acen-color--);
     color: var(--light-color);
     font-family: var(--tipo-grafia);
     font-size: 16px;
