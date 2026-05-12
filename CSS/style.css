@@ -1,12 +1,31 @@
-@font-face {
+/* @font-face {
     font-family: trueno;
     src: url(/Users/gabrielaalvarez/Documents/Web_exposicion/Trueno-titulo.otf);
+}
+
+@font-face {
     font-family: lacquer;
-    src: url(/Users/gabrielaalvarez/Documents/Web_exposicion/Lacquer-Regular.ttf);
+    src: url(/Users/gabrielaalvarez/Documents/Web_exposicion/Lacquer-Regular.ttf);   
+} */
+
+@font-face {
+    font-family: trueno;
+    src: url(../Trueno-titulo.otf);
+}
+
+@font-face {
+    font-family: lacquer;
+    src: url(../Lacquer-Regular.ttf);
+}
+
+@font-face {
+    font-family: trueno-regular;
+    src: url(../Trueno-texto.otf);
 }
 
 :root {
     --tipo-grafia: trueno;
+    --tipo-texto: trueno-regular;
     --tipo-deco--: lacquer;
     --acen-color--: #DA2424;
     --dark-color: #000000;
@@ -46,7 +65,7 @@ ul {
 
 .compra-entradas a {
     color: var(--dark-color);
-    font-family: var(--tipo-grafia);
+    font-family: var(--tipo-texto);
     font-weight: lighter;
     font-size: 14px;
 }
@@ -66,7 +85,7 @@ header {
 
 header a {
     color: var(--light-color);
-    font-family: var(--tipo-grafia);
+    font-family: var(--tipo-texto);
     font-size: 18px;
     font-weight: lighter;
     transition: 0.3s;
@@ -149,7 +168,7 @@ header a:hover {
 .menu-mobile > li > a {
     font-size: 18px;
     color: var(--light-color);
-    font-family: var(--tipo-grafia);
+    font-family: var(--tipo-texto);
     transition: 0.3s;
 }
 
@@ -220,7 +239,7 @@ header a:hover {
 .hero-content .btn-cta {
     background-color: var(--acen-color--);
     color: var(--light-color);
-    font-family: var(--tipo-grafia);
+    font-family: var(--tipo-texto);
     font-size: 16px;
     padding: 16px 36px;
     display: inline-block;
@@ -243,12 +262,6 @@ header a:hover {
     font-size: 16px;
     letter-spacing: 2px;
     color: var(--dark-color);
-    padding-right: 50px;
-}
-.obras-track span {
-    font-family: var(--tipo-grafia);
-    font-size: 16px;
-    letter-spacing: 2px;
     padding-right: 50px;
 }
 
@@ -284,12 +297,39 @@ header a:hover {
 .carrusel-track {
     display: flex;
     gap: 70px;
-    animation: carrusel 10s linear infinite;
+    animation: carrusel 20s linear infinite;
 }
 
 @keyframes carrusel {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
+}
+
+/* TIRA DE SOBRE NOSOTROS */
+.sobrenosotros {
+    background-color: var(--acen-color--);
+    color: var(--dark-color);
+    overflow: hidden;
+    padding: 30px 0;
+    white-space: nowrap;
+}
+
+.sobrenosotros-track {
+    display: flex;
+    gap: 60px;
+    animation: sobrenosotros 7s linear infinite;
+}
+
+.sobrenosotros-track span {
+    font-family: var(--tipo-deco--);
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: var(--light-color);
+}
+
+@keyframes sobrenosotros {
+    0% { transform: translate(0);}
+    100% { transform: translate(-50%);}
 }
 
 /* RESPONSIVE */
