@@ -10,7 +10,7 @@
     --light-color: #ffffff;
 }
 
-•⁠  ⁠{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -65,7 +65,7 @@ header a {
     font-family: trueno;
 }
 
-/* MENÚ DESKTOP */
+/* MENÃš DESKTOP */
 
 .menu-desktop {
     display: flex;
@@ -103,7 +103,7 @@ header a {
     display: none;
 }
 
-/* MENÚ MÓVIL */
+/* MENÃš MÃ“VIL */
 
 .nav-mobile {
     width: 100%;
@@ -132,7 +132,7 @@ header a {
     font-family: trueno;
 }
 
-/* TOGGLE — los tres elementos deben ser hermanos dentro de header */
+/* TOGGLE â€” los tres elementos deben ser hermanos dentro de header */
 
 .side-menu:checked ~ .nav-mobile {
     max-height: 100vh;
@@ -162,8 +162,3 @@ header a {
         display: block;
     }
 }
-
-
-
-
-
