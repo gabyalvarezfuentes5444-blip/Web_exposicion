@@ -1,10 +1,13 @@
 @font-face {
     font-family: trueno;
     src: url(/Users/gabrielaalvarez/Documents/Web_exposicion/Trueno-titulo.otf);
+    font-family: lacquer;
+    src: url(/Users/gabrielaalvarez/Documents/Web_exposicion/Lacquer-Regular.ttf);
 }
 
 :root {
     --tipo-grafia: trueno;
+    --tipo-deco--: lacquer
     --acen-color: #DA2424;
     --dark-color: #000000;
     --light-color: #ffffff;
@@ -225,7 +228,7 @@ header a:hover {
 }
 
 /* TIRA DE ARTISTAS */
-.ticker {
+.obras {
     background-color: var(--light-color);
     color: var(--dark-color);
     overflow: hidden;
@@ -235,14 +238,14 @@ header a:hover {
     border-bottom: 3px solid var(--dark-color);
 }
 
-.ticker-track span {
+.obras-track span {
     font-family: var(--tipo-grafia);
     font-size: 16px;
     letter-spacing: 2px;
     color: var(--dark-color);
     padding-right: 50px;
 }
-.ticker-track span {
+.obras-track span {
     font-family: var(--tipo-grafia);
     font-size: 16px;
     letter-spacing: 2px;
@@ -250,16 +253,44 @@ header a:hover {
 }
 
 /* ANIMACION DE LA TIRA DE ARTISTAS */
-.ticker-track {
+.obras-track {
     display: inline-block;
-    animation: ticker 20s linear infinite;
+    animation: obras 20s linear infinite;
 }
 
-@keyframes ticker {
+@keyframes obras {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
 
+/* CARRUSEL DE OBRAS */
+
+.carrusel {
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--light-color);
+    padding: 60px 0;
+}
+
+
+.carrusel-track img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    min-width: 400px;
+}
+
+/* ANIMACION DEL CARRUSEL DE OBRAS */
+.carrusel-track {
+    display: flex;
+    gap: 70px;
+    animation: carrusel 10s linear infinite;
+}
+
+@keyframes carrusel {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
 
 /* RESPONSIVE */
 
