@@ -28,6 +28,7 @@ ul {
 .LOGO {
     width: 150px;
     height: auto;
+    margin-left: 10px;
 }
 
 /* BARRA SUPERIOR */
@@ -63,9 +64,16 @@ header {
 header a {
     color: var(--light-color);
     font-family: trueno;
+    font-size: 18px;
+    font-weight: lighter;
+    transition: 0.3s;
 }
 
-/* MENÃš DESKTOP */
+header a:hover {
+    color: var(--acen-color);
+}
+
+/* MENu DESKTOP */
 
 .menu-desktop {
     display: flex;
@@ -74,14 +82,19 @@ header a {
     gap: 80px;
 }
 
+
 .user {
-    width: 50px;
+    width: 40px;
     height: auto;
 }
 
 .carrito_compra {
-    width: 50px;
+    width: 40px;
     height: auto;
+}
+
+.nav-desktop {
+    margin-left: auto;
 }
 
 /* CHECKBOX oculto */
@@ -95,7 +108,7 @@ header a {
 .hamb {
     display: none;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 40px;
     color: var(--light-color);
 }
 
@@ -103,12 +116,16 @@ header a {
     display: none;
 }
 
-/* MENÃš MÃ“VIL */
+.hamb i {
+    font-size: 30px;
+}
+
+/* MENU MOVIL */
 
 .nav-mobile {
     width: 100%;
     position: fixed;
-    top: 60px;
+    top: 86px;
     left: 0;
     background-color: var(--dark-color);
     z-index: 9999;
@@ -127,10 +144,25 @@ header a {
 }
 
 .menu-mobile > li > a {
-    font-size: 30px;
+    font-size: 18px;
     color: var(--light-color);
     font-family: trueno;
+    transition: 0.3s;
 }
+
+.menu-mobile > li > a:hover {
+    color: var(--acen-color);
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 50px;
+    margin-right: 30px;
+}
+
+
 
 /* TOGGLE â€” los tres elementos deben ser hermanos dentro de header */
 
@@ -148,8 +180,9 @@ header a {
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 720px) {
+/* TABLET */
 
+@media screen and (max-width: 1024px) {
     * {
         font-size: 16px;
     }
@@ -159,6 +192,75 @@ header a {
     }
 
     .hamb {
-        display: block;
+        display: flex;
+        align-items: center;
     }
+
+    .LOGO {
+        order: 1;
+    }
+
+    .header-icons {
+        order: 2;
+        margin-left: auto;
+    }
+
+    .hamb {
+        order: 3;
+        margin-left: 15px;
+    }
+
+    .user {
+        width: 40px;
+    }
+
+    .carrito_compra {
+        width: 40px;
+    }
+}
+
+
+/* MOVIL */
+
+@media screen and (max-width: 720px) {
+
+    * {
+        font-size: 16px;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+        .user {
+        width: 40px;
+    }
+
+    .carrito_compra {
+        width: 40px;
+    }
+
+    .hamb {
+        display: flex;
+        align-items: center;
+    
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .LOGO {
+        order: 1;
+    }
+
+    .header-icons {
+        order: 2;
+        margin-left: auto;
+    }
+
+    .hamb {
+        order: 3;
+        margin-left: 15px;
+    }
+
 }
