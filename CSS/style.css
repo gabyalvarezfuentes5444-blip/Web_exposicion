@@ -376,7 +376,7 @@ header a:hover {
         font-size: 16px;
     }
 
-    /* HEADER */
+/* HEADER */
     .nav-desktop {
         display: none;
     }
@@ -408,7 +408,7 @@ header a:hover {
         width: 40px;
     }
 
-    /* TIRA DE OBRAS */
+ /* TIRA DE OBRAS */
     .obras-track span {
         font-size: 13px;
     }
@@ -417,7 +417,7 @@ header a:hover {
         padding: 8px 0;
     }
 
-    /* CARRUSEL DE OBRAS */
+/* CARRUSEL DE OBRAS */
     .carrusel {
         padding: 40px;
     }
@@ -434,7 +434,7 @@ header a:hover {
         gap: 50px;
     }
 
-    /* TIRA DE SOBRE NOSOTROS */
+/* TIRA DE SOBRE NOSOTROS */
     .sobrenosotros-track span {
         font-size: 16px;
     }
@@ -448,8 +448,28 @@ header a:hover {
         padding: 20px 0;
     }
 
-    /* SECCION SOBRE NOSOTROS */
+/* SECCION SOBRE NOSOTROS */
+    .sect-sobre-noso {
+    flex-direction: column;
+    padding: 60px 40px;
+    }
 
+    .texto-sobre-noso {
+    width: 100%;
+    }
+
+    .img-sobre-noso {
+    width: 100%;
+    }
+
+    .img-sobre-noso img:first-child {
+    height: 200px;
+    }
+
+    .img-sobre-noso img:last-child {
+    width: 57%;
+    height: 350px;
+    }
     
 }
 
@@ -462,7 +482,7 @@ header a:hover {
         font-size: 16px;
     }
 
-    /* HEADER */
+/* HEADER */
     .nav-desktop {
         display: none;
     }
@@ -498,7 +518,7 @@ header a:hover {
         margin-left: 15px;
     }
 
-    /* HERO */
+/* HERO */
 
     .hero-content {
         bottom: 40px;
@@ -517,7 +537,7 @@ header a:hover {
         padding: 12px 24px;
     }
 
-    /* TIRA DE OBRAS */
+/* TIRA DE OBRAS */
     .obras-track span {
         font-size: 11px;
     }
@@ -526,7 +546,7 @@ header a:hover {
         padding: 6px 0;
     }
 
-    /* CARRUSEL DE OBRAS */
+/* CARRUSEL DE OBRAS */
 
     .carrusel {
         padding: 30px;
@@ -543,7 +563,7 @@ header a:hover {
         gap: 30px;
     }
 
-    /* TIRA DE SOBRE NOSOTROS */
+/* TIRA DE SOBRE NOSOTROS */
     .sobrenosotros-track span {
         font-size: 13px;
     }
@@ -555,6 +575,31 @@ header a:hover {
     
     .sobrenosotros {
         padding: 15px 0;
+    }
+
+/* SECCION SOBRE NOSOTROS */
+    .sect-sobre-noso {
+    flex-direction: column;
+    padding: 40px 20px;
+    }
+
+    .texto-sobre-noso {
+    width: 100%;
+    }
+
+    .img-sobre-noso {
+    width: 100%;
+    flex-direction: column;
+    }
+
+    .img-sobre-noso img:first-child {
+    width: 100%;
+    height: auto;
+    }
+
+    .img-sobre-noso img:last-child {
+    width: 100%;
+    height: auto;
     }
 
 
