@@ -81,11 +81,13 @@ header a {
     transition: 0.3s;
 }
 
+/* Esto lo que hace, es que cuando pasas el mouse por encima cambia de color */
+
 header a:hover {
     color: var(--acen-color);
 }
 
-/* MENu DESKTOP */
+/* MENU DESKTOP */
 
 .menu-desktop {
     display: flex;
@@ -109,8 +111,7 @@ header a:hover {
     margin-left: auto;
 }
 
-/* CHECKBOX oculto */
-
+/* esconde el chechbox */
 .side-menu {
     display: none;
 }
@@ -132,7 +133,7 @@ header a:hover {
     font-size: 30px;
 }
 
-/* MENU MOVIL */
+/* MENU CELULAR */
 
 .nav-mobile {
     width: 100%;
@@ -176,8 +177,10 @@ header a:hover {
 
 
 
-/* TOGGLE â€” los tres elementos deben ser hermanos dentro de header */
-
+/* Mostramos el menu mobile cuando se hace click en el icomo */
+/* Toggle */
+/* (ADRIAN) */
+/* Selecciona .nav-mobilecuando el checkbox tiene el estado checked */
 .side-menu:checked ~ .nav-mobile {
     max-height: 100vh;
 }
@@ -236,7 +239,7 @@ header a:hover {
     border-radius: 8px;
 }
 
-/* TIRA DE ARTISTAS */
+/* ARTISTAS */
 .obras {
     background-color: var(--light-color);
     color: var(--dark-color);
