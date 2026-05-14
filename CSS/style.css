@@ -238,3 +238,46 @@ header a:hover {
     display: inline-block;
     border-radius: 8px;
 }
+
+
+
+/* RESPONSIVE */
+
+/* TABLET */
+
+@media screen and (max-width: 1024px) {
+    * {
+        font-size: 16px;
+    }
+
+/* HEADER */
+    .nav-desktop {
+        display: none;
+    }
+
+    .hamb {
+        display: flex;
+        align-items: center;
+    }
+
+    .LOGO {
+        order: 1;
+    }
+
+    .header-icons {
+        order: 2;
+        margin-left: auto;
+    }
+
+    .hamb {
+        order: 3;
+        margin-left: 15px;
+    }
+
+    .user {
+        width: 40px;
+    }
+
+    .carrito_compra {
+        width: 40px;
+    }
