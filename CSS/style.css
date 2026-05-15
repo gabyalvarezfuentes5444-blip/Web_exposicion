@@ -370,10 +370,13 @@ header a:hover {
     object-fit: cover;
 }
 
+/* FOOTER */
+
 footer {
     background-color: var(--dark-color);
 }
 
+/* Aqui es donde se separan los textos por columnas */
 .footer-columnas {
     display: flex;
     justify-content: space-between;
@@ -542,6 +545,18 @@ footer {
     width: 57%;
     height: 350px;
     }
+
+/* FOOTER */
+    .footer-columnas {
+        flex-wrap: wrap;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .cont-col {
+        width: 45%;
+    }
+
     
 }
 
