@@ -257,6 +257,108 @@ header a:hover {
 
 
 
+/* TIRA DE SOBRE NOSOTROS */
+.sobrenosotros {
+    background-color: var(--acen-color);
+    color: var(--dark-color);
+    overflow: hidden;
+    padding: 30px 0;
+    white-space: nowrap;
+}
+
+
+.sobrenosotros-track span {
+    font-family: var(--tipo-deco);
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: var(--light-color);
+}
+
+/* ANIMACIONES DE LA TIRA SOBRENOSOTROS */
+.sobrenosotros-track {
+    display: flex;
+    gap: 60px;
+    animation: sobrenosotros 6s linear infinite;
+}
+
+@keyframes sobrenosotros {
+    0% { transform: translate(0);}
+    100% { transform: translate(-50%);}
+}
+
+
+
+/* SECCION DE TIENDA */
+.sect-sobre-noso {
+    display: flex;
+    gap: 40px;
+    padding: 40px 10px;
+    background-color: var(--light-color);
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0px auto;
+
+}
+
+.texto-sobre-noso {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.texto-sobre-noso p {
+    font-family: var(--tipo-texto);
+    font-size: 24px;
+    color: var(--dark-color);
+}
+
+.img-sobre-noso {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.img-sobre-noso img:first-child {
+    width: 40%;
+    height: 210px;
+    object-fit: cover;
+}
+.img-sobre-noso img:last-child{
+    width: 60%;
+    height: 560px;
+    object-fit: cover;
+}
+
+
+
+/* TIRA DE USUARIO*/
+.usuario {
+    background-color: var(--dark-color);
+    width: 100%;
+    padding: 8px 0;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.usuario-track {
+    padding: 0 24px; 
+    display: block;
+}
+
+.usuario-track span {
+    color: var(--light-color);
+    font-family: var(--tipo-grafia);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    display: inline-block;
+}
+
+
+
+
 
 /* RESPONSIVE */
 
