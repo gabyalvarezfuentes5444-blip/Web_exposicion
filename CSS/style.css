@@ -1,0 +1,609 @@
+@font-face {
+    font-family: trueno;
+    src: url(../Trueno-titulo.otf);
+}
+
+@font-face {
+    font-family: lacquer;
+    src: url(../Lacquer-Regular.ttf);
+}
+
+@font-face {
+    font-family: trueno-regular;
+    src: url(../Trueno-texto.otf);
+}
+
+:root {
+    --tipo-grafia: trueno;
+    --tipo-texto: trueno-regular;
+    --tipo-deco: lacquer;
+    --acen-color: #DA2424;
+    --dark-color: #000000;
+    --light-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.LOGO {
+    width: 150px;
+    height: auto;
+    margin-left: 10px;
+}
+
+/* BARRA SUPERIOR */
+
+.compra-entradas {
+    background-color: var(--light-color);
+    margin: 3px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compra-entradas a {
+    color: var(--dark-color);
+    font-family: var(--tipo-texto);
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 100;
+}
+
+header a {
+    color: var(--light-color);
+    font-family: var(--tipo-texto);
+    font-size: 18px;
+    font-weight: lighter;
+    transition: 0.3s;
+}
+
+/* Esto lo que hace, es que cuando pasas el mouse por encima cambia de color */
+
+header a:hover {
+    color: var(--acen-color);
+}
+
+/* MENU DESKTOP */
+
+.menu-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+
+.user {
+    width: 40px;
+    height: auto;
+}
+
+.carrito_compra {
+    width: 40px;
+    height: auto;
+}
+
+.nav-desktop {
+    margin-left: auto;
+}
+
+/* esconde el chechbox */
+.side-menu {
+    display: none;
+}
+
+/* ICONO HAMBURGUESA */
+
+.hamb {
+    display: none;
+    cursor: pointer;
+    font-size: 40px;
+    color: var(--light-color);
+}
+
+.hamb .fa-xmark {
+    display: none;
+}
+
+.hamb i {
+    font-size: 30px;
+}
+
+/* MENU CELULAR */
+
+.nav-mobile {
+    width: 100%;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    background-color: var(--dark-color);
+    z-index: 9999;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.menu-mobile > li > a {
+    font-size: 18px;
+    color: var(--light-color);
+    font-family: var(--tipo-texto);
+    transition: 0.3s;
+}
+
+.menu-mobile > li > a:hover {
+    color: var(--acen-color);
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 50px;
+    margin-right: 30px;
+}
+
+
+
+/* Mostramos el menu mobile cuando se hace click en el icomo */
+/* Toggle */
+/* (ADRIAN) */
+/* Selecciona .nav-mobilecuando el checkbox tiene el estado checked */
+.side-menu:checked ~ .nav-mobile {
+    max-height: 100vh;
+}
+
+.side-menu:checked ~ .hamb .fa-bars {
+    display: none;
+}
+
+.side-menu:checked ~ .hamb .fa-xmark {
+    display: block;
+}
+
+
+
+/* HERO */
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 33%;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 140px;
+    left: 60px;
+    z-index: 10;
+}
+
+.hero-content h1 {
+    font-family: var(--tipo-grafia);
+    font-size: 80px;
+    color: var(--light-color);
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn-cta {
+    background-color: var(--acen-color);
+    color: var(--light-color);
+    font-family: var(--tipo-texto);
+    font-size: 16px;
+    padding: 16px 36px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+/* ARTISTAS */
+.obras {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    overflow: hidden;
+    padding: 12px 0;
+    white-space: nowrap;
+    border-top: 3px solid var(--dark-color);
+    border-bottom: 3px solid var(--dark-color);
+}
+
+.obras-track span {
+    font-family: var(--tipo-grafia);
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: var(--dark-color);
+    padding-right: 50px;
+}
+
+/* ANIMACION DE LA TIRA DE ARTISTAS */
+.obras-track {
+    display: inline-block;
+    animation: obras 20s linear infinite;
+}
+
+@keyframes obras {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* CARRUSEL DE OBRAS */
+
+.carrusel {
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--light-color);
+    padding: 60px 0;
+}
+
+
+.carrusel-track img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    min-width: 400px;
+}
+
+/* ANIMACION DEL CARRUSEL DE OBRAS */
+.carrusel-track {
+    display: flex;
+    gap: 70px;
+    animation: carrusel 20s linear infinite;
+}
+
+@keyframes carrusel {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* TIRA DE SOBRE NOSOTROS */
+.sobrenosotros {
+    background-color: var(--acen-color);
+    color: var(--dark-color);
+    overflow: hidden;
+    padding: 30px 0;
+    white-space: nowrap;
+}
+
+
+.sobrenosotros-track span {
+    font-family: var(--tipo-deco);
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: var(--light-color);
+}
+
+/* ANIMACIONES DE LA TIRA SOBRENOSOTROS */
+.sobrenosotros-track {
+    display: flex;
+    gap: 60px;
+    animation: sobrenosotros 6s linear infinite;
+}
+
+@keyframes sobrenosotros {
+    0% { transform: translate(0);}
+    100% { transform: translate(-50%);}
+}
+
+/* SECCION DE SOBRE NOSOTROS */
+.sect-sobre-noso {
+    display: flex;
+    gap: 60px;
+    padding: 80px 30px;
+    background-color: var(--light-color);
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0px auto;
+
+}
+
+.texto-sobre-noso {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.texto-sobre-noso p {
+    font-family: var(--tipo-texto);
+    font-size: 24px;
+    color: var(--dark-color);
+}
+
+.img-sobre-noso {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.img-sobre-noso img:first-child {
+    width: 40%;
+    height: 210px;
+    object-fit: cover;
+}
+.img-sobre-noso img:last-child{
+    width: 60%;
+    height: 560px;
+    object-fit: cover;
+}
+
+/* RESPONSIVE */
+
+/* TABLET */
+
+@media screen and (max-width: 1024px) {
+    * {
+        font-size: 16px;
+    }
+
+/* HEADER */
+    .nav-desktop {
+        display: none;
+    }
+
+    .hamb {
+        display: flex;
+        align-items: center;
+    }
+
+    .LOGO {
+        order: 1;
+    }
+
+    .header-icons {
+        order: 2;
+        margin-left: auto;
+    }
+
+    .hamb {
+        order: 3;
+        margin-left: 15px;
+    }
+
+    .user {
+        width: 40px;
+    }
+
+    .carrito_compra {
+        width: 40px;
+    }
+
+ /* TIRA DE OBRAS */
+    .obras-track span {
+        font-size: 13px;
+    }
+    
+    .obras {
+        padding: 8px 0;
+    }
+
+/* CARRUSEL DE OBRAS */
+    .carrusel {
+        padding: 40px;
+    }
+
+    .carrusel-track img {
+        width: 280px;
+        height: 200px;
+        min-width: 280px;
+
+    }
+
+    .carrusel-track {
+        display: flex;
+        gap: 50px;
+    }
+
+/* TIRA DE SOBRE NOSOTROS */
+    .sobrenosotros-track span {
+        font-size: 16px;
+    }
+
+    .sobrenosotros-track {
+        display: flex;
+        gap: 40px;
+    }
+    
+    .sobrenosotros {
+        padding: 20px 0;
+    }
+
+/* SECCION SOBRE NOSOTROS */
+    .sect-sobre-noso {
+    flex-direction: column;
+    padding: 60px 40px;
+    }
+
+    .texto-sobre-noso {
+    width: 100%;
+    }
+
+    .img-sobre-noso {
+    width: 100%;
+    }
+
+    .img-sobre-noso img:first-child {
+    height: 200px;
+    }
+
+    .img-sobre-noso img:last-child {
+    width: 57%;
+    height: 350px;
+    }
+    
+}
+
+
+/* MOVIL */
+
+@media screen and (max-width: 720px) {
+
+    * {
+        font-size: 16px;
+    }
+
+/* HEADER */
+    .nav-desktop {
+        display: none;
+    }
+        .user {
+        width: 40px;
+    }
+
+    .carrito_compra {
+        width: 40px;
+    }
+
+    .hamb {
+        display: flex;
+        align-items: center;
+    
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .LOGO {
+        order: 1;
+    }
+
+    .header-icons {
+        order: 2;
+        margin-left: auto;
+    }
+
+    .hamb {
+        order: 3;
+        margin-left: 15px;
+    }
+
+/* HERO */
+
+    .hero-content {
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 60px;
+    }
+
+    .hero-content .btn-cta {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+
+/* TIRA DE OBRAS */
+    .obras-track span {
+        font-size: 11px;
+    }
+    
+    .obras {
+        padding: 6px 0;
+    }
+
+/* CARRUSEL DE OBRAS */
+
+    .carrusel {
+        padding: 30px;
+    }
+
+    .carrusel-track img {
+        width: 200px;
+        height: 150px;
+        min-width: 200px;
+    }
+
+    .carrusel-track {
+        display: flex;
+        gap: 30px;
+    }
+
+/* TIRA DE SOBRE NOSOTROS */
+    .sobrenosotros-track span {
+        font-size: 13px;
+    }
+
+    .sobrenosotros-track {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .sobrenosotros {
+        padding: 15px 0;
+    }
+
+/* SECCION SOBRE NOSOTROS */
+    .sect-sobre-noso {
+    flex-direction: column;
+    padding: 40px 20px;
+    }
+
+    .texto-sobre-noso {
+    width: 100%;
+    }
+
+    .img-sobre-noso {
+    width: 100%;
+    flex-direction: column;
+    }
+
+    .img-sobre-noso img:first-child {
+    width: 100%;
+    height: auto;
+    }
+
+    .img-sobre-noso img:last-child {
+    width: 100%;
+    height: auto;
+    }
+
+
+}
