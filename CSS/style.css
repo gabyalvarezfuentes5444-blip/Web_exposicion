@@ -38,7 +38,7 @@ ul {
 }
 
 .LOGO {
-    width: 150px;
+    width: 120px;
     height: auto;
     margin-left: 10px;
 }
@@ -69,14 +69,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 7px;
     z-index: 100;
 }
 
 header a {
     color: var(--light-color);
     font-family: var(--tipo-texto);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: lighter;
     transition: 0.3s;
 }
@@ -98,12 +98,12 @@ header a:hover {
 
 
 .user {
-    width: 40px;
+    width: 33px;
     height: auto;
 }
 
 .carrito_compra {
-    width: 40px;
+    width: 33px;
     height: auto;
 }
 
@@ -121,7 +121,7 @@ header a:hover {
 .hamb {
     display: none;
     cursor: pointer;
-    font-size: 40px;
+    /* font-size: 33px; */
     color: var(--light-color);
 }
 
@@ -130,7 +130,7 @@ header a:hover {
 }
 
 .hamb i {
-    font-size: 30px;
+    font-size: 29px;
 }
 
 /* MENU CELULAR */
@@ -303,14 +303,14 @@ header a:hover {
     background-color: var(--acen-color);
     color: var(--dark-color);
     overflow: hidden;
-    padding: 30px 0;
+    padding: 15px 0;
     white-space: nowrap;
 }
 
 
 .sobrenosotros-track span {
     font-family: var(--tipo-deco);
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 2px;
     color: var(--light-color);
 }
@@ -348,7 +348,7 @@ header a:hover {
 
 .texto-sobre-noso p {
     font-family: var(--tipo-texto);
-    font-size: 24px;
+    font-size: 20px;
     color: var(--dark-color);
 }
 
@@ -404,11 +404,11 @@ header a:hover {
     }
 
     .user {
-        width: 40px;
+        width: 33px;
     }
 
     .carrito_compra {
-        width: 40px;
+        width: 33px;
     }
 
  /* TIRA DE OBRAS */
@@ -489,12 +489,12 @@ header a:hover {
     .nav-desktop {
         display: none;
     }
-        .user {
-        width: 40px;
+    .user {
+        width: 33px;
     }
 
     .carrito_compra {
-        width: 40px;
+        width: 33px;
     }
 
     .hamb {
