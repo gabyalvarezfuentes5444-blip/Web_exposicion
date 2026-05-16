@@ -370,6 +370,20 @@ header a:hover {
     object-fit: cover;
 }
 
+/* ELEMENTO FIJO - VA PARA ARRIBA */
+
+.scroll-arriba a {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+}
+
+.Logo-arteurbano {
+    width: 80px;
+    height: auto;
+}
+
 /* FOOTER */
 
 footer {
