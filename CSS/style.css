@@ -57,7 +57,7 @@ ul {
     color: var(--dark-color);
     font-family: var(--tipo-texto);
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 /* HEADER */
@@ -393,7 +393,7 @@ footer {
 .cont-col h4 {
     color: var(--light-color);
     font-family: var(--tipo-grafia);
-    font-size: 16px;
+    font-size: 14px;
     padding-bottom: 20px;
 }
 
@@ -401,14 +401,14 @@ footer {
     color: var(--light-color);
     font-family: var(--tipo-texto);
     font-weight: lighter;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 .cont-col p {
     color: var(--light-color);
     font-family: var(--tipo-texto);
     font-weight: lighter;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 .footer-redes {
@@ -421,7 +421,7 @@ footer {
 }
 
 .footer-redes i {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .footer-redes img {
@@ -439,7 +439,7 @@ footer {
     color: var(--light-color);
     display: flex;
     justify-content: center;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 /* RESPONSIVE */
