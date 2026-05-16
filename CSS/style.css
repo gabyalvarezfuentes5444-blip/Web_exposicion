@@ -283,7 +283,6 @@ header a:hover {
     width: 400px;
     height: 300px;
     object-fit: cover;
-    min-width: 400px;
 }
 
 /* ANIMACION DEL CARRUSEL DE OBRAS */
