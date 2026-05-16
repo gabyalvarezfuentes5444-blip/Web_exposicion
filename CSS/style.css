@@ -239,6 +239,11 @@ header a:hover {
     border-radius: 8px;
 }
 
+.hero-content .btn-cta:hover {
+    background-color: var(--light-color);
+    color: var(--acen-color);
+}
+
 /* ARTISTAS */
 .obras {
     background-color: var(--light-color);
