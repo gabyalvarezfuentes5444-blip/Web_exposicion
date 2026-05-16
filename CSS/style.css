@@ -38,7 +38,7 @@ ul {
 }
 
 .LOGO {
-    width: 150px;
+    width: 120px;
     height: auto;
     margin-left: 10px;
 }
@@ -57,7 +57,7 @@ ul {
     color: var(--dark-color);
     font-family: var(--tipo-texto);
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 /* HEADER */
@@ -69,14 +69,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 7px;
     z-index: 100;
 }
 
 header a {
     color: var(--light-color);
     font-family: var(--tipo-texto);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: lighter;
     transition: 0.3s;
 }
@@ -98,12 +98,12 @@ header a:hover {
 
 
 .user {
-    width: 40px;
+    width: 33px;
     height: auto;
 }
 
 .carrito_compra {
-    width: 40px;
+    width: 33px;
     height: auto;
 }
 
@@ -121,7 +121,7 @@ header a:hover {
 .hamb {
     display: none;
     cursor: pointer;
-    font-size: 40px;
+    /* font-size: 33px; */
     color: var(--light-color);
 }
 
@@ -130,7 +130,7 @@ header a:hover {
 }
 
 .hamb i {
-    font-size: 30px;
+    font-size: 29px;
 }
 
 /* MENU CELULAR */
@@ -303,14 +303,14 @@ header a:hover {
     background-color: var(--acen-color);
     color: var(--dark-color);
     overflow: hidden;
-    padding: 30px 0;
+    padding: 15px 0;
     white-space: nowrap;
 }
 
 
 .sobrenosotros-track span {
     font-family: var(--tipo-deco);
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 2px;
     color: var(--light-color);
 }
@@ -348,7 +348,7 @@ header a:hover {
 
 .texto-sobre-noso p {
     font-family: var(--tipo-texto);
-    font-size: 24px;
+    font-size: 20px;
     color: var(--dark-color);
 }
 
@@ -368,6 +368,92 @@ header a:hover {
     width: 60%;
     height: 560px;
     object-fit: cover;
+}
+
+/* ELEMENTO FIJO - VA PARA ARRIBA */
+
+.scroll-arriba a {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+}
+
+.Logo-arteurbano {
+    width: 80px;
+    height: auto;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--dark-color);
+}
+
+/* Aqui es donde se separan los textos por columnas */
+.footer-columnas {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px ;
+    gap: 20px;
+}
+
+.cont-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cont-col h4 {
+    color: var(--light-color);
+    font-family: var(--tipo-grafia);
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.cont-col a {
+    color: var(--light-color);
+    font-family: var(--tipo-texto);
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+.cont-col p {
+    color: var(--light-color);
+    font-family: var(--tipo-texto);
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 60px;
+    padding-bottom: 20px;
+}
+
+.footer-redes i {
+    font-size: 18px;
+}
+
+.footer-redes img {
+    width: 60px;
+    height: auto;
+}
+
+.footer-copy {
+    background-color: var(--acen-color);
+    padding: 20px 0;
+}
+
+.footer-copy p {
+    font-family: var(--tipo-texto);
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
 }
 
 /* RESPONSIVE */
@@ -404,11 +490,11 @@ header a:hover {
     }
 
     .user {
-        width: 40px;
+        width: 33px;
     }
 
     .carrito_compra {
-        width: 40px;
+        width: 33px;
     }
 
  /* TIRA DE OBRAS */
@@ -473,6 +559,18 @@ header a:hover {
     width: 57%;
     height: 350px;
     }
+
+/* FOOTER */
+    .footer-columnas {
+        flex-wrap: wrap;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .cont-col {
+        width: 45%;
+    }
+
     
 }
 
@@ -489,12 +587,12 @@ header a:hover {
     .nav-desktop {
         display: none;
     }
-        .user {
-        width: 40px;
+    .user {
+        width: 33px;
     }
 
     .carrito_compra {
-        width: 40px;
+        width: 33px;
     }
 
     .hamb {
