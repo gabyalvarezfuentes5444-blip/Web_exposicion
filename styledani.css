@@ -1,0 +1,213 @@
+
+/* MODELO GABRIELA/LUCÍA */
+    :root {
+        --tipo-grafia: trueno;
+        --tipo-texto: trueno-regular;
+        --tipo-deco: lacquer;
+        --acen-color: #DA2424;
+        --dark-color: #000000;
+        --light-color: #ffffff;
+    }
+
+/* ARTISTAS */
+    /* HERO_ARTISTAS */
+        #hero-artistas {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+            background-image: url('media/imgdani/artistas/hero_artistas.webp');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 0 3.75rem;
+        }
+
+        #hero-artistas::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 1; 
+        }
+
+        .hero-artistas-content {
+            max-width: 50rem;
+            position: relative;
+            z-index: 2; 
+        }
+
+        .hero-artistas-content {
+            max-width: 50rem; 
+        }
+
+        .hero-artistas-content h1 {
+            font-family: var(--tipo-grafia);
+            font-size: 5rem; 
+            color: var(--light-color);
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-artistas-content p {
+            font-family: var(--tipo-texto);
+            color: var(--light-color);
+            font-size: 1.125rem; 
+            line-height: 1.6;
+        }
+
+    /* TARJETAS_ARTISTAS: MÓVIL */
+        .grid-artistas {
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 2.5rem; 
+            padding: 2.5rem 1.25rem;
+            background-color: var(--light-color);
+        }
+
+        .tarjeta-artista {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--light-color);
+            border: 0.125rem solid var(--dark-color); 
+            overflow: hidden;
+        }
+
+        .imagen-artista {
+            width: 100%;
+            height: 18.75rem;
+            overflow: hidden;
+        }
+
+        .imagen-artista img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .tarjeta-artista:hover .imagen-artista img {
+            transform: scale(1.05);
+        }
+
+        .info-artista {
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.938rem; 
+            background-color: var(--light-color);
+        }
+
+        .info-artista h2 {
+            font-family: var(--tipo-grafia);
+            font-size: 1.375rem; 
+            color: var(--dark-color);
+            text-transform: uppercase;
+        }
+
+        .botones-artista {
+            display: flex;
+            gap: 0.625rem; 
+        }
+
+        .botones-artista a {
+            flex: 1;
+            text-align: center;
+            font-family: var(--tipo-texto);
+            font-size: 0.875rem; 
+            padding: 0.75rem 0;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+            /* BOTÓN: OBRAS (HOVER DE BLANCO A NEGRO) */
+            .btn-obras {
+                background-color: var(--light-color);
+                color: var(--dark-color);
+                border: 0.125rem solid var(--dark-color);
+            }
+
+            .btn-obras:hover {
+                background-color: var(--dark-color);
+                color: var(--light-color);
+            }
+
+            /* BOTÓN: INFORMACIÓN (HOVER DE NEGRO A ROJO) */
+            .btn-info {
+                background-color: var(--acen-color);
+                color: var(--light-color);
+                border: 0.125rem solid var(--acen-color);
+            }
+
+            .btn-info:hover {
+                background-color: var(--dark-color);
+                border-color: var(--dark-color);
+            }
+
+    
+
+
+
+
+
+
+
+
+
+
+            
+
+/* RESPONSIVE MÓVIL */
+        /* MÓVIL_ARTISTAS */
+        @media screen and (max-width: 720px) {
+            #hero-artistas {
+                padding: 0 1.25rem;
+                height: auto;
+                padding-top: 8.75rem; 
+                padding-bottom: 2.5rem;
+            }
+            
+            #hero-artistas h1 {
+                font-size: 3.125rem; 
+            }
+
+            .btn-obras {
+                display: none;
+            }
+        }
+
+/* RESPONSIVE TABLET */
+        /* TABLET_ARTISTAS */
+        @media screen and (min-width: 721px) {
+            .grid-artistas {
+                grid-template-columns: repeat(2, 1fr); 
+                padding: 3.125rem 2.5rem;
+            }
+        }
+
+/* RESPONSIVE ORDENADOR NORMAL */
+        /* ORDENADOR NORMAL_ ARTISTAS */
+        @media screen and (min-width: 1025px) {
+            .grid-artistas {
+                grid-template-columns: repeat(3, 1fr); 
+                padding: 3.75rem 5rem;
+                gap: 1.875rem; 
+            }
+        }
+
+/* RESPONSIVE ORDENADOR ENORME */
+    /* ORDENADOR ENORME_ ARTISTAS */
+    @media screen and (min-width: 1440px) {
+        .grid-artistas {
+            max-width: 87.5rem;
+            margin: 0 auto;
+        }
+        
+        #hero-artistas .hero-artistas-content {
+            max-width: 75rem;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
