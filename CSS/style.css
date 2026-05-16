@@ -93,7 +93,7 @@ header a {
     transition: 0.3s;
 }
 
-/* Esto lo que hace, es que cuando pasas el mouse por encima cambia de color */
+/* el mouse cambia de color */
 header a:hover {
     color: var(--acen-color);
 }
@@ -330,6 +330,77 @@ header a:hover {
     width: 60%;
     height: 560px;
     object-fit: cover;
+}
+
+
+
+
+/* PRODUCTOS GRID PRINCIPAL */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 80px 60px; 
+  padding: 120px 120px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* TARJETA ARTICULOS */
+.producto-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.producto-card img {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  margin-bottom: 40px;
+}
+
+.producto-card.accesorio img {
+  max-height: 130px;
+}
+
+
+
+/* título del producto */
+.producto-card h3 {
+  font-family: trueno;
+  src: url(../tipos/Trueno-titulo.otf);
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+  color: #000000;
+}
+
+/* precio */
+.producto-card .precio {
+  font-family: trueno;
+  src: url(../tipos/Trueno-titulo.otf);
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0;
+  color: #000000;
+}
+
+
+/* RESPONSIVE MOVIL Y TABLET */
+@media (max-width: 900px) {
+  .productos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  .productos {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 30px 15px;
+  }
 }
 
 
