@@ -439,8 +439,87 @@ header a:hover {
 
 .btn-enviar:hover {
     transform: scale(1.05);
-    background-color: #b31d1d;
+    background-color: #000000;
 }
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--dark-color);
+}
+
+/* Aqui es donde se separan los textos por columnas */
+.footer-columnas {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px ;
+    gap: 20px;
+}
+
+.cont-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cont-col h4 {
+    color: var(--light-color);
+    font-family: var(--tipo-grafia);
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.cont-col a {
+    color: var(--light-color);
+    font-family: var(--tipo-texto);
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+.cont-col p {
+    color: var(--light-color);
+    font-family: var(--tipo-texto);
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 60px;
+    padding-bottom: 20px;
+}
+
+.footer-redes i {
+    font-size: 18px;
+}
+
+.footer-redes img {
+    width: 60px;
+    height: auto;
+}
+
+.footer-copy {
+    background-color: var(--acen-color);
+    padding: 20px 0;
+}
+
+.footer-copy p {
+    font-family: var(--tipo-texto);
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
+
+
+
 
 
 /* RESPONSIVE */
