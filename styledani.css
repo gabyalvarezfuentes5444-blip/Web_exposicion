@@ -1,13 +1,29 @@
+/* SELECTOR GENERAL DANI */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
 /* MODELO GABRIELA/LUCÍA */
     :root {
-        --tipo-grafia: trueno;
-        --tipo-texto: trueno-regular;
-        --tipo-deco: lacquer;
+        --tipo-grafia: trueno, sans-serif;
+        --tipo-texto: trueno-regular, sans-serif;
+        --tipo-deco: lacquer, sans-serif;
         --acen-color: #DA2424;
         --dark-color: #000000;
         --light-color: #ffffff;
     }
+
+
+
+/* GENERAL: DANI */
+    body {
+        width: 100%;
+        overflow-x: hidden; 
+        background-color: var(--light-color);
+    }
+
 
 /* ARTISTAS */
     /* HERO_ARTISTAS */
@@ -30,7 +46,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); 
+            background-color: rgba(0, 0, 0, 0.4); 
             z-index: 1; 
         }
 
@@ -38,10 +54,6 @@
             max-width: 50rem;
             position: relative;
             z-index: 2; 
-        }
-
-        .hero-artistas-content {
-            max-width: 50rem; 
         }
 
         .hero-artistas-content h1 {
@@ -62,17 +74,19 @@
         .grid-artistas {
             display: grid;
             grid-template-columns: 1fr; 
-            gap: 2.5rem; 
-            padding: 2.5rem 1.25rem;
+            gap: 1.5rem; 
+            padding: 1.5rem 0.5rem; 
             background-color: var(--light-color);
+            width: 100%;
         }
 
         .tarjeta-artista {
             display: flex;
             flex-direction: column;
             background-color: var(--light-color);
-            border: 0.125rem solid var(--dark-color); 
+            border: 0.1rem solid var(--dark-color);
             overflow: hidden;
+            width: 100%;
         }
 
         .imagen-artista {
@@ -93,40 +107,58 @@
         }
 
         .info-artista {
-            padding: 1.25rem;
+            padding: 1.5rem;          
             display: flex;
-            flex-direction: column;
-            gap: 0.938rem; 
+            flex-direction: column;  
+            gap: 0.8rem;              
             background-color: var(--light-color);
         }
 
         .info-artista h2 {
             font-family: var(--tipo-grafia);
-            font-size: 1.375rem; 
+            font-size: 1.35rem; 
             color: var(--dark-color);
             text-transform: uppercase;
+            margin: 0;                
+        }
+
+        .info-artista p {
+            font-family: var(--tipo-texto);
+            color: var(--dark-color);
+            line-height: 1.5;
+            font-size: 1rem; 
+            margin: 0 0 0.5rem 0;    
         }
 
         .botones-artista {
             display: flex;
             gap: 0.625rem; 
+            width: 100%;
+            margin-top: auto;         
         }
 
         .botones-artista a {
             flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            font-family: var(--tipo-texto);
-            font-size: 0.875rem; 
-            padding: 0.75rem 0;
+            font-family: var(--tipo-grafia); 
+            font-size: 0.75rem; 
+            padding: 0.85rem 0.2rem;   
             font-weight: bold;
-            transition: 0.3s ease;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            white-space: nowrap; 
         }
 
             /* BOTÓN: OBRAS (HOVER DE BLANCO A NEGRO) */
             .btn-obras {
                 background-color: var(--light-color);
                 color: var(--dark-color);
-                border: 0.125rem solid var(--dark-color);
+                border: 0.1rem solid var(--dark-color);
             }
 
             .btn-obras:hover {
@@ -136,14 +168,14 @@
 
             /* BOTÓN: INFORMACIÓN (HOVER DE NEGRO A ROJO) */
             .btn-info {
-                background-color: var(--acen-color);
+                background-color: var(--dark-color);
                 color: var(--light-color);
-                border: 0.125rem solid var(--acen-color);
+                border: 0.1rem solid var(--dark-color);
             }
 
             .btn-info:hover {
-                background-color: var(--dark-color);
-                border-color: var(--dark-color);
+                background-color: var(--acen-color);
+                border-color: var(--acen-color);
             }
 
     
@@ -173,41 +205,65 @@
                 font-size: 3.125rem; 
             }
 
+            .grid-artistas {
+                grid-template-columns: 1fr;
+                padding: 1.5rem 0.5rem;
+            }
+
             .btn-obras {
                 display: none;
             }
         }
 
+
 /* RESPONSIVE TABLET */
         /* TABLET_ARTISTAS */
-        @media screen and (min-width: 721px) {
+        @media screen and (min-width: 721px) and (max-width: 1024px) {
             .grid-artistas {
                 grid-template-columns: repeat(2, 1fr); 
-                padding: 3.125rem 2.5rem;
+                padding: 2.5rem 2rem;
+                width: 95%;
+                margin: 0 auto;
             }
         }
 
 /* RESPONSIVE ORDENADOR NORMAL */
         /* ORDENADOR NORMAL_ ARTISTAS */
-        @media screen and (min-width: 1025px) {
+        @media screen and (min-width: 1025px) and (max-width: 1599px) {
+            #hero-artistas h1 {
+                font-size: 4.5rem;
+            }
+
             .grid-artistas {
                 grid-template-columns: repeat(3, 1fr); 
-                padding: 3.75rem 5rem;
-                gap: 1.875rem; 
+                gap: 1.875rem;
+                padding: 4rem 2rem;
+                width: 98%; 
+                margin: 0 auto;    
+            }
+
+            .imagen-artista {
+                height: 19rem;
             }
         }
 
+
 /* RESPONSIVE ORDENADOR ENORME */
     /* ORDENADOR ENORME_ ARTISTAS */
-    @media screen and (min-width: 1440px) {
-        .grid-artistas {
-            max-width: 87.5rem;
-            margin: 0 auto;
+        @media screen and (min-width: 1600px) {
+            #hero-artistas h1 {
+                font-size: 5rem;
+            }
+
+            .grid-artistas {
+                grid-template-columns: repeat(4, 1fr); 
+                gap: 2rem;
+                padding: 4rem 3rem;
+                width: 98%;
+                margin: 0 auto;
+            }
+            
+            .imagen-artista {
+                height: 21rem;
+            }
         }
-        
-        #hero-artistas .hero-artistas-content {
-            max-width: 75rem;
-            margin: 0 auto;
-            width: 100%;
-        }
-    }
