@@ -314,7 +314,7 @@
 
         .tarjeta-artista {
             background-color: var(--light-color);
-            border: 2px solid var(--dark-color); 
+            border: 1px solid var(--dark-color); 
             display: flex;
             flex-direction: column;
             overflow: hidden;
@@ -323,7 +323,7 @@
         .imagen-artista {
             width: 100%;
             object-fit: cover;
-            border-bottom: 2px solid var(--dark-color);
+            border-bottom: 1px solid var(--dark-color);
         }
 
         .imagen-artista img {
@@ -387,7 +387,7 @@
             .btn-obras {
                 background-color: var(--light-color);
                 color: var(--dark-color);
-                border: 1.5px solid var(--dark-color);
+                border: 1px solid var(--dark-color);
             }
             .btn-obras:hover {
                 background-color: var(--dark-color);
@@ -398,7 +398,7 @@
             .btn-info {
                 background-color: var(--dark-color);
                 color: var(--light-color);
-                border: 1.5px solid var(--dark-color);
+                border: 1px solid var(--dark-color);
             }
             .btn-info:hover {
                 background-color: var(--acen-color);
@@ -526,68 +526,148 @@
 /* ::::::::::::::: MEDIA QUERIES: MIXTO (GABRIELA+DANI)::::::::::::::::::: */
 /* --- RESPONSIVE MÓVIL (Hasta 720px) --- */
     @media screen and (max-width: 720px) {
-        /* MENÚ_GRABRIELA */
-        header { justify-content: space-between; }
-        .nav-desktop { display: none; }
-        .hamb { display: flex; align-items: center; order: 3; margin-left: 15px; }
-        .LOGO { order: 1; }
-        .header-icons { order: 2; margin-left: auto; }
-        .user, .carrito_compra { width: 33px; }
+    header { 
+            justify-content: space-between; 
+            padding: 10px;
+        }
+        .nav-desktop { 
+            display: none; 
+        }
+        .hamb { 
+            display: flex; 
+            align-items: center; 
+            order: 3; 
+            margin-left: 15px; 
+        }
+        .LOGO { 
+            order: 1; 
+            width: 100px; 
+        }
+        .header-icons { 
+            order: 2; 
+            margin-left: auto; 
+            gap: 20px;
+        }
+        .user, .carrito_compra { 
+            width: 28px; 
+        }
+
 
         /* ARTISTAS_DANI */
         #hero-artistas {
-            padding: 0 1.25rem;
-            height: auto;
-            padding-top: 8.75rem; 
-            padding-bottom: 2.5rem;
-        }
-        #hero-artistas h1 { font-size: 3.125rem; }
-        .grid-artistas { grid-template-columns: 1fr; padding: 1.5rem 0.5rem; gap: 1.5rem; }
-        .btn-obras { display: none; }
+                padding: 0 1.25rem;
+                height: auto;
+                padding-top: 8.75rem; 
+                padding-bottom: 2.5rem;
+            }
+            #hero-artistas h1 { 
+                font-size: 2.5rem; 
+            }
+            
+            .grid-artistas { 
+                grid-template-columns: 1fr; 
+                padding: 1.5rem 0rem; 
+                /* gap: 1.5rem; 
+                width: 100%;  */
+            }
+            
+            .imagen-artista {
+                height: 14rem; 
+            }
+            
+            .btn-obras { 
+                display: none; 
+            }
     }
+
+
 
 
 
 /* --- RESPONSIVE TABLET (Desde 721px hasta 1024px) --- */
     @media screen and (min-width: 721px) and (max-width: 1024px) {
         /* MENÚ Y FOOTER_GABRIELA */
-        .nav-desktop { display: none; }
-        .hamb { display: flex; align-items: center; order: 3; margin-left: 15px; }
-        .LOGO { order: 1; }
-        .header-icons { order: 2; margin-left: auto; }
-        .footer-columnas { flex-wrap: wrap; padding: 30px 20px; gap: 30px; }
-        .cont-col { width: 45%; }
+        .nav-desktop { 
+            display: none; 
+        }
+        .hamb { 
+            display: flex; 
+            align-items: center; 
+            order: 3; 
+            margin-left: 15px; 
+        }
+        .LOGO { 
+            order: 1; 
+        }
+        .header-icons { 
+            order: 2; 
+            margin-left: auto; 
+        }
+        .footer-columnas { 
+            flex-wrap: wrap; 
+            padding: 30px 20px; 
+            gap: 30px; 
+        }
+        .cont-col { 
+            width: 45%; 
+        }
 
+        
         /* ARTISTAS_DANI */
-        .grid-artistas { grid-template-columns: repeat(2, 1fr); padding: 2.5rem 2rem; gap: 1.5rem; width: 95%; margin: 0 auto; }
+        .grid-artistas { 
+            grid-template-columns: repeat(2, 1fr); 
+            padding: 2.5rem 0rem; 
+            /* gap: 1.5rem; 
+            width: 95%; 
+            margin: 0 auto;  */
+        }
+        
+        .imagen-artista {
+            height: 16rem;
+        }
     }
 
 /* --- TU MACBOOK PRO Y PORTÁTILES (Desde 1025px hasta 1599px) --- */
     @media screen and (min-width: 1025px) and (max-width: 1599px) {
+        /* SEGURIDAD: Nos aseguramos de que el menú móvil de Gabriela no se active en pc */
+        .hamb, .nav-mobile { 
+            display: none !important; 
+        }
+        
+        .nav-desktop { 
+            display: block; 
+        }
+
         /* ARTISTAS_DANI */
         .grid-artistas {
             grid-template-columns: repeat(3, 1fr); 
-            gap: 1.875rem;
-            padding: 4rem 2rem;
-            width: 98%; 
-            margin: 0 auto;    
+            /* gap: 1.875rem; */
+            padding: 2rem 0rem;
+            /* width: 98%;  */
+            /* margin: 0 auto;     */
         }
+        
         .imagen-artista {
             height: 19rem; 
         }
     }
 
 /* --- MONITOR DE MESA GRANDE (A partir de 1600px) --- */
-@media screen and (min-width: 1600px) {
-    /* ARTISTAS_DANI */
-    .grid-artistas {
-        grid-template-columns: repeat(4, 1fr); 
-        gap: 2rem;
-        padding: 4rem 3rem;
-        width: 98%;
-        margin: 0 auto;
+    @media screen and (min-width: 1600px) {
+        .hamb, .nav-mobile { 
+            display: none !important; 
+        }
+
+        /* ARTISTAS_DANI */
+        .grid-artistas {
+            grid-template-columns: repeat(4, 1fr); 
+            /* gap: 2rem; */
+            padding: 2rem 0rem;
+            /* width: 98%;
+            margin: 0 auto; */
+        }
+        
+        .imagen-artista {
+            height: 21rem;
+        }
     }
-    .imagen-artista {
-        height: 21rem;
-    }
-}
