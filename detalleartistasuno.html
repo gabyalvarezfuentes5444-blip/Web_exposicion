@@ -10,108 +10,114 @@
             
         <!-- CSS -->
             <link rel="stylesheet" href="styledani.css">
+
+        <!-- JAVASCRIPT -->
+        <script src="js/script.js"></script>
     </head>
 
 
 
     <body>
+        <!-- MENÚ GABRIELA -->
+        <div class="compra-entradas">
+            <a href="#">Compra tus entradas</a>
+        </div>
 
-        <!-- MENÚ GABI -->
-            <div class="compra-entradas">
-                <a href="#">Compra tus entradas</a>
+        <header class="header-corporativo">
+            <img class="LOGO" src="media/img/LOGO_CANAL.webp" alt="Logo">
+
+            <nav class="nav-desktop">
+                <ul class="menu-desktop">
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="artistas.html">Artistas</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Tickets</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-icons">
+                <a href=""><img class="carrito_compra" src="media/img/icono_compra.webp" alt="carrito_compra"></a>
+                <a href=""><img class="user" src="media/img/icono_user.webp" alt="User"></a>
             </div>
 
-            <header>
-                <img class="LOGO" src="media/img/LOGO_CANAL.webp" alt="Logo">
+            <input type="checkbox" id="sideMenu" class="side-menu">
+            <label class="hamb" for="sideMenu">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </label>
 
-                <nav class="nav-desktop">
-                    <ul class="menu-desktop">
-                        <li><a href="#">Sobre nosotros</a></li>
-                        <li><a href="artistas.html">Artistas</a></li>
-                        <li><a href="#">Tienda</a></li>
-                        <li><a href="#">Tickets</a></li>
-                    </ul>
-                </nav>
-
-                <div class="header-icons">
-                    <a href=""><img class="carrito_compra" src="media/img/icono_compra.webp" alt="carrito_compra"></a>
-                    <a href=""><img class="user" src="media/img/icono_user.webp" alt="User"></a>
-                </div>
-
-                <input type="checkbox" id="sideMenu" class="side-menu">
-                <label class="hamb" for="sideMenu">
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-xmark"></i>
-                </label>
-
-                <nav class="nav-mobile">
-                    <ul class="menu-mobile">
-                        <li><a href="#">Sobre nosotros</a></li>
-                        <li><a href="artistas.html">Artistas</a></li>
-                        <li><a href="#">Tienda</a></li>
-                        <li><a href="#">Tickets</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <nav class="nav-mobile">
+                <ul class="menu-mobile">
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="artistas.html">Artistas</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Tickets</a></li>
+                </ul>
+            </nav>
+        </header>
 
 
-
-        <main class="detalle-artista-contenedor">
-            <!-- HERO DETALLE BANKSY -->
-            <section id="hero-detalle-artista">
-                <div class="hero-detalle-content">
-                    <h1>BANKSY</h1> 
-                    <p class="subtitulo-deco">Banksy es el pseudónimo del enigmático artista de Bristol que transformó el grafiti en un arma de crítica social. Famoso por su técnica de stencil y su anonimato, utiliza el humor negro para atacar el consumismo y la guerra.</p>
+        <!-- DETALLES DE ARTISTA DANI -->
+        <section class="hero-detallesartista">
+                <div class="hero-content">
+                    <h1>BANKSY</h1>
+                    <p>Banksy es el pseudónimo del enigmático artista de Bristol que transformó el grafiti en un arma de crítica social. Famoso por su técnica de stencil y su anonimato, utiliza el humor negro para atacar el consumismo y la guerra.</p>
                 </div>
             </section>
 
-            <section class="seccion-info-artista">
+            <main class="bloque-exposicion" id="zona-banksy">
                 
-                <article class="trayectoria-artista">
-                    <h2>Trayectoria</h2>
-                    <p>Es el máximo exponente del Street Art contemporáneo. Originario de Bristol, transformó el grafiti en una herramienta de sátira política y social mediante el uso del stencil (estarcido), técnica que le permite intervenir el espacio público con rapidez y precisión. Pese a ser una figura de fama mundial, ha blindado su identidad bajo un anonimato que desafía al sistema.
+                <article class="texto-introduccion">
+                    <p>Es el máximo exponente del Street Art contemporáneo. Originario de Bristol, transformó el grafiti en una herramienta de sátira política y social mediante el uso del stencil (estarcido), técnica que le permite intervenir el espacio público con rapidez y precisión. Pese a ser una figura de fama mundial, ha blindado su identidad bajo un anonimato que desafía al sistema.</p>
                     <p>En esta exposición, su obra actúa como el cierre de un círculo iniciado en la prehistoria: la necesidad humana de expresarse en los muros. A través de sus icónicas ratas y mensajes antibélicos, Banksy trasciende el vandalismo para convertirse en un cronista ácido que cuestiona el poder y el mercado del arte desde la propia institución.</p>
                 </article>
 
+                <article class="zona-galeria">
+                    <div class="galeria">
+                        
+                        <figure>
+                            <img src="media/imgdani/detalle_artistas/banksy/bansky_uno.webp" alt="Napoleon looking east">
+                            <figcaption>
+                                <h3>Napoleon looking east</h3>
+                                <p>Una reinterpretación satírica del clásico cuadro de Napoleón cruzando los Alpes, cubierto con una capa roja que vela su rostro.</p>
+                            </figcaption>
+                        </figure>
 
-                <!-- CARRUSEL OBRAS BANKSY -->
-                <article class="galeria-obras-carrusel">
-                    <h2>Obras Destacadas</h2>
-                    
-                    <div class="carrusel-visor">
-                        <div class="carrusel-track">
-                            <div class="carrusel-item">
-                                <img src="media/imgdani/detalle_artistas/banksy/bansky_uno.webp" alt="Obra de Banksy 1">
-                                <p class="pie-foto">Napoleon looking east</p>
-                            </div>
-                            <div class="carrusel-item">
-                                <img src="media/imgdani/detalle_artistas/banksy/bansky_dos.webp" alt="Obra de Banksy 2">
-                                <p class="pie-foto">Well hung lover</p>
-                            </div>
-                            <div class="carrusel-item">
-                                <img src="media/imgdani/detalle_artistas/banksy/bansky_tres.webp" alt="Obra de Banksy 3">
-                                <p class="pie-foto">Girl with Balloon</p>
-                            </div>
-                            <div class="carrusel-item">
-                                <img src="media/imgdani/detalle_artistas/banksy/bansky_cuatro.webp" alt="Obra de Banksy 4">
-                                <p class="pie-foto">The Juxtaposition of law</p>
-                            </div>                           
-                        </div>
+                        <figure>
+                            <img src="media/imgdani/detalle_artistas/banksy/bansky_dos.webp" alt="Well hung lover">
+                            <figcaption>
+                                <h3>Well hung lover</h3>
+                                <p>Obra pintada en una clínica de salud sexual en Bristol que muestra a un amante colgado de la ventana para evitar ser descubierto.</p>
+                            </figcaption>
+                        </figure>
 
-                        <button class="carrusel-btn btn-izq" aria-label="Anterior">&#10094;</button>
-                        <button class="carrusel-btn btn-der" aria-label="Siguiente">&#10095;</button>
+                        <figure>
+                            <img src="media/imgdani/detalle_artistas/banksy/bansky_tres.webp" alt="Girl with Balloon">
+                            <figcaption>
+                                <h3>Girl with Balloon</h3>
+                                <p>Quizás la obra más icónica del artista, que muestra a una niña pequeña perdiendo un globo rojo con forma de corazón.</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="media/imgdani/detalle_artistas/banksy/bansky_cuatro.webp" alt="The Juxtaposition of law">
+                            <figcaption>
+                                <h3>The Juxtaposition of law</h3>
+                                <p>Una pieza de crítica directa sobre las instituciones, los juicios de valor y el panorama judicial dentro del sistema actual.</p>
+                            </figcaption>
+                        </figure>
+
                     </div>
                 </article>
+            </main>
 
-            </section>
-
-        </main>
-
-
-
+            <div id="modal">
+                <span id="cerrar">&times;</span>
+                <figure id="modal-figure"></figure>
+            </div>
 
 
-        <!-- FOOTER: GABRIELA -->
+        <!-- FOOTER: GABRIELA -->  
         <footer>
             <div class="footer-columnas">
                 <div class="cont-col">
