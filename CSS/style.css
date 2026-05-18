@@ -484,11 +484,11 @@ footer {
     flex-direction: row;
     border-top: 1px solid var(--dark-color);
     align-items: stretch;
+    width: 100%;
     min-height: 100vh;
 }
 .map-container {
     width: 50%;
-    min-height: 600px;
     position: relative;
     flex-shrink: 0;
 }
@@ -504,7 +504,7 @@ footer {
 
 .contenido-sobrenosotros {
     width: 50%;
-    padding: 30px;
+    padding: 20px 30px 29px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -529,7 +529,10 @@ footer {
     padding-left: 30px;
     padding-right: 30px;
     font-family: var(--tipo-texto);
+    align-items: flex-start
 }
+
+
 
 .contenido-sobrenosotros div:first-child {
     border: 1px solid var(--dark-color);
@@ -548,6 +551,8 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    flex-grow: 1;
+
 }
 
 .formulario input,
@@ -562,14 +567,21 @@ footer {
     width: 100%;
 }
 
-.formulario textarea {
-    height: 120px;
-}
+ .formulario textarea {
+    flex-grow: 1;
+    min-height: 120px;
+} 
 
-.form-aceptar {
+.form-aceptar > div {
     display: flex;
+    flex-direction: row;
     gap: 10px;
     align-items: center;
+    margin: 0;
+    padding: 0;
+}
+#privacidad{
+    width: 14px;
 }
 
 .form-aceptar label {
@@ -584,7 +596,7 @@ footer {
     color: var(--light-color);
     border: none;
     padding: 12px 30px;
-    font-family: var(--tipo-texto);
+    font-family: var(--tipo-deco);
     font-size: 18px;
     cursor: pointer;
     border-radius: 25px;
