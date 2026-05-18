@@ -413,7 +413,7 @@
     
 
 /* _____________________PÁGINA DETALLE ARTISTAS_______________________ */
-/* DETALLE DE ARTISTAS */
+/* DETALLE DE ARTISTAS UNO */
     /* HERO DEL DETALLE ARTISTA */
         .hero-detallesartista {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.85)), url('media/imgdani/detalle_artistas/banksy/hero_banksy.webp'); 
@@ -596,8 +596,18 @@
         }
 
 
-
-
+    /* HERO DEL DETALLE ARTISTA DOS */
+        .hero-detallesartistados {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.85)), url('media/imgdani/detalle_artistas/basquiat/hero_basquiat.webp'); 
+        background-size: cover;
+        background-position: center 30%;
+        height: 55vh;
+        display: flex;
+        align-items: flex-end;
+        padding: 2.5rem 6%;
+        box-sizing: border-box;
+        color: var(--light-color);
+        }
 
 
 
@@ -828,6 +838,12 @@
                 padding-top: 8.75rem; 
                 padding-bottom: 2.5rem;
             }
+            .hero-detallesartistados {
+                padding: 0 1.25rem;
+                height: auto;
+                padding-top: 8.75rem; 
+                padding-bottom: 2.5rem;
+            }
 
             .hero-content h1 { 
                 font-size: 2.5rem; 
@@ -933,6 +949,10 @@
                 height: auto;
                 padding: 8.75rem 2rem 2.5rem 2rem;
             }
+            .hero-detallesartistados {
+                height: auto;
+                padding: 8.75rem 2rem 2.5rem 2rem;
+            }
             
             .hero-content h1 {
                 font-size: 3.5rem;
@@ -1030,6 +1050,11 @@
                 flex: calc(50% - 10px);        
                 border: 1px solid #222;   
             }
+
+        /* DETALLE DE ARTISTAS DOS */
+            #zona-banksy.orden-inverso {
+                flex-direction: row-reverse; 
+            }
     }
 
 /* --- MONITOR DE MESA GRANDE (A partir de 1600px) --- */
@@ -1071,5 +1096,10 @@
             .galeria > figure {
                 flex: calc(50% - 10px);        
                 border: 1px solid #222;   
+            }
+
+        /* DETALLE DE ARTISTAS DOS */
+            #zona-banksy.orden-inverso {
+                flex-direction: row-reverse; 
             }
     }
