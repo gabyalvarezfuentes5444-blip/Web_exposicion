@@ -1,30 +1,18 @@
 
-/* GABRIELA: HOME Y SOBRE NOSOTROS */
-
 @font-face {
     font-family: trueno;
     src: url(../Trueno-titulo.otf);
-/* TIPOGRAFÍAS */
-@font-face {
-    font-family: trueno;
-    src: url(../tipos/Trueno-titulo.otf);
 }
 
 @font-face {
     font-family: lacquer;
     src: url(../Lacquer-Regular.ttf);
-    src: url(../tipos/Lacquer-Regular.ttf);
 }
 
 @font-face {
     font-family: trueno-regular;
     src: url(../Trueno-texto.otf);
 }
-
-    src: url(../tipos/Trueno-texto.otf);
-}
-
-
 
 :root {
     --tipo-grafia: trueno;
@@ -35,7 +23,6 @@
     --light-color: #ffffff;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -43,11 +30,9 @@
     font-size: 18px;
 }
 
-
 a {
     text-decoration: none;
 }
-
 
 ul {
     list-style: none;
@@ -55,15 +40,9 @@ ul {
 
 .LOGO {
     width: 120px;
-
-.LOGO {
-    width: 150px;
     height: auto;
     margin-left: 10px;
 }
-
-
-
 
 /* BARRA SUPERIOR */
 
@@ -81,8 +60,6 @@ ul {
     font-weight: lighter;
     font-size: 10px;
 }
-
-
 
 /* HEADER */
 
@@ -107,13 +84,9 @@ header a {
 
 /* Esto lo que hace, es que cuando pasas el mouse por encima cambia de color */
 
-/* el mouse cambia de color */
 header a:hover {
     color: var(--acen-color);
 }
-
-
-
 
 /* MENU DESKTOP */
 
@@ -123,6 +96,7 @@ header a:hover {
     align-items: center;
     gap: 80px;
 }
+
 
 .user {
     width: 33px;
@@ -143,15 +117,12 @@ header a:hover {
     display: none;
 }
 
-
-
 /* ICONO HAMBURGUESA */
 
 .hamb {
     display: none;
     cursor: pointer;
     /* font-size: 33px; */
-    font-size: 29px;
     color: var(--light-color);
 }
 
@@ -163,9 +134,7 @@ header a:hover {
     font-size: 29px;
 }
 
-
-
-/* MENU MÓVIL */
+/* MENU CELULAR */
 
 .nav-mobile {
     width: 100%;
@@ -227,8 +196,8 @@ header a:hover {
 
 
 
-
 /* HERO */
+
 #hero {
     position: relative;
     width: 100%;
@@ -244,13 +213,6 @@ header a:hover {
     height: 100%;
     object-fit: cover;
     object-position: center 33%;
-
-#hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
 }
 
 .hero-content {
@@ -341,8 +303,6 @@ header a:hover {
     100% { transform: translateX(-50%); }
 }
 
-
-
 /* TIRA DE SOBRE NOSOTROS */
 .sobrenosotros {
     background-color: var(--acen-color);
@@ -377,14 +337,6 @@ header a:hover {
     display: flex;
     gap: 60px;
     padding: 80px 30px;
-
-
-
-/* SECCION DE TIENDA */
-.sect-sobre-noso {
-    display: flex;
-    gap: 40px;
-    padding: 40px 10px;
     background-color: var(--light-color);
     align-items: flex-start;
     max-width: 1200px;
@@ -402,7 +354,6 @@ header a:hover {
 .texto-sobre-noso p {
     font-family: var(--tipo-texto);
     font-size: 20px;
-    font-size: 24px;
     color: var(--dark-color);
 }
 
@@ -424,190 +375,6 @@ header a:hover {
     object-fit: cover;
 }
 
-
-
-
-/* PRODUCTOS GRID PRINCIPAL */
-.productos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 80px 60px; 
-  padding: 120px 120px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* TARJETA ARTICULOS */
-.producto-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.producto-card img {
-  max-width: 100%;
-  height: auto;
-  max-height: 500px;
-  margin-bottom: 40px;
-}
-
-.producto-card.accesorio img {
-  max-height: 130px;
-}
-
-
-
-/* título del producto */
-.producto-card h3 {
-  font-family: trueno;
-  src: url(../tipos/Trueno-titulo.otf);
-  font-size: 13px;
-  font-weight: 500;
-  margin: 0 0 5px 0;
-  color: #000000;
-}
-
-/* precio */
-.producto-card .precio {
-  font-family: trueno;
-  src: url(../tipos/Trueno-titulo.otf);
-  font-size: 11px;
-  font-weight: bold;
-  margin: 0;
-  color: #000000;
-}
-
-
-/* RESPONSIVE MOVIL Y TABLET */
-@media (max-width: 900px) {
-  .productos {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-  }
-}
-
-@media (max-width: 550px) {
-  .productos {
-    grid-template-columns: 1fr;
-    gap: 35px;
-    padding: 30px 15px;
-  }
-}
-
-
-
-
-
-
-/* USUARIO */
-
-/* TIRA DE USUARIO*/
-.usuario {
-    background-color: var(--dark-color);
-    width: 100%;
-    padding: 8px 0;
-    border-top: 1px solid rgb(255, 255, 255);
-}
-
-.usuario-track {
-    padding: 0 24px; 
-    display: block;
-}
-
-.usuario-track span {
-    color: var(--light-color);
-    font-family: var(--tipo-grafia);
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 300;
-    display: inline-block;
-}
-
-
-
-/* FORMULARIO USUARIO */
-.container-registro {
-    max-width: 500px;
-    margin: 60px auto;
-    padding: 0 20px;
-}
-
-#registro {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
-}
-
-/* CAJAS DE TEXTO */
-.form-item {
-    width: 100%;
-}
-
-.form-item input {
-    width: 100%;
-    background-color: var(--dark-color);
-    color: var(--light-color);
-    border: none;
-    padding: 18px 20px;
-    font-family: var(--tipo-texto);
-    font-size: 16px;
-    outline: none;
-}
-
-
-.form-item input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 15px;
-}
-
-/* SECCIÓN DEL CHECKBOX (Términos) */
-.form-aceptar {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-    align-items: flex-start;
-}
-
-.form-aceptar input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-    margin-top: 3px;
-    cursor: pointer;
-    accent-color: var(--dark-color);
-}
-
-.form-aceptar label {
-    font-family: var(--tipo-texto);
-    font-size: 11px;
-    color: var(--dark-color);
-    line-height: 1.5;
-    cursor: pointer;
-}
-
-/* BOTÓN DE ENVÍO*/
-.btn-enviar {
-    background-color: var(--acen-color);
-    color: var(--light-color);
-    border: none;
-    padding: 12px 45px;
-    font-family: var(--tipo-deco);
-    font-size: 20px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-.btn-enviar:hover {
-    transform: scale(1.05);
-    background-color: #000000;
-}
-
-
-
-
 /* ELEMENTO FIJO - VA PARA ARRIBA */
 
 .scroll-arriba a {
@@ -621,9 +388,6 @@ header a:hover {
     width: 80px;
     height: auto;
 }
-
-
-
 
 /* FOOTER */
 
@@ -697,44 +461,7 @@ footer {
     font-size: 10px;
 }
 
-
-
-
 /* RESPONSIVE */
-@media screen and (max-width: 480px) {
-    .container-registro {
-        margin: 30px auto;
-    }
-    
-    .btn-enviar {
-        width: 100%; /* Botón ancho total en móviles */
-    }
-}
-
-
-/* USUARIO FOTO */
-
-#usuario {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden ;
-    display: block;
-}
-
-#usuario img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
-
-
-
-
-
-
-/* RESPONSIVE TIENDA */
 
 /* TABLET */
 
@@ -854,17 +581,6 @@ footer {
 
 
 /* MOVIL */
-        width: 40px;
-    }
-
-    .carrito_compra {
-        width: 40px;
-    }
-}
-
-
-
-    /* MOVIL */
 
 @media screen and (max-width: 720px) {
 
@@ -884,19 +600,6 @@ footer {
         width: 33px;
     }
 
-    
-    /* HEADER */
-    .nav-desktop {
-        display: none;
-    }
-        .user {
-        width: 40px;
-    }
-    
-    .carrito_compra {
-        width: 40px;
-    }
-    
     .hamb {
         display: flex;
         align-items: center;
@@ -911,30 +614,18 @@ footer {
         order: 1;
     }
 
-    
-    header {
-        justify-content: space-between;
-    }
-    
-    .LOGO {
-        order: 1;
-    }
-    
     .header-icons {
         order: 2;
         margin-left: auto;
     }
-    
+
     .hamb {
         order: 3;
         margin-left: 15px;
     }
-    
 
+/* HERO */
 
-
-    /* HERO */
-    
     .hero-content {
         bottom: 40px;
         left: 50%;
@@ -947,11 +638,6 @@ footer {
         font-size: 60px;
     }
 
-    
-    .hero-content h1 {
-        font-size: 60px;
-    }
-    
     .hero-content .btn-cta {
         font-size: 14px;
         padding: 12px 24px;
@@ -1024,13 +710,6 @@ footer {
 
 
 }
-}
-
-
-
-
-
-
 
 
 
