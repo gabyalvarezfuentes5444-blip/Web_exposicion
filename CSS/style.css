@@ -599,7 +599,7 @@ footer {
     font-family: var(--tipo-deco);
     font-size: 18px;
     cursor: pointer;
-    border-radius: 25px;
+    border-radius: 8px;
     width: fit-content;
 }
 
@@ -853,6 +853,26 @@ footer {
     .img-sobre-noso img:last-child {
     width: 100%;
     height: auto;
+    }
+
+    /* SOBRE NOSOTROS - PAGINAS */
+
+    .sect-sobrenosotros {
+    flex-direction: column;
+    min-height: auto;
+    }
+
+.map-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    }
+
+.contenido-sobrenosotros {
+    width: 100%;
+    min-height: auto;
+    border-left: none;
+    border-top: 2px solid var(--dark-color);
     }
 
 
