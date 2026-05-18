@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="compra-entradas">
+        <a href="">Compra tus entradas</a>
+    </div>
+
+    <header>
+
+        <!-- LOGO FUNDACION CANAL -->
+        <img class="LOGO" src="media/LOGO_CANAL.webp" alt="Logo">
+
+        <!-- Menú desktop -->
+        <nav class="nav-desktop">
+            <ul class="menu-desktop">
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Artistas</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Tickets</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons">
+            <a href=""><img class="carrito_compra" src="media/icono_compra.webp" alt="carrito_compra"></a>
+            
+            <a href=""><img class="user" src="media/icono_user.webp" alt="User"></a>
+        </div>
+
+     <!-- Icono hamnburguesa ( y x) (ADRINA)-->
+        <input type="checkbox" id="sideMenu" class="side-menu">
+        <label class="hamb" for="sideMenu">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <!-- MENU CELULAR -->
+        <nav class="nav-mobile">
+            <ul class="menu-mobile">
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Artistas</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- TIRA DE USUARIO -->
+    <div class="usuario">
+         <div class="usuario-track">
+             <span> Usuario </span>
+        </div>
+    </div>
+
+
+    <section class="container-registro">
+        <form id="registro">
+            <div class="form-item">
+                <input type="text" placeholder="Nombre completo..." required>
+            </div>
+
+            <div class="form-item">
+                <input type="email" placeholder="Correo electrónico..." required>
+            </div>
+
+            <div class="form-item">
+                <input type="tel" placeholder="Número de teléfono...">
+            </div>
+
+            <div class="form-item">
+                <input type="text" placeholder="Nombre de usuario..." required>
+            </div>
+
+            <div class="form-item">
+                <input type="password" placeholder="Contraseña..." required>
+            </div>
+
+            <div class="form-aceptar">
+                <input type="checkbox" id="acepto" required>
+                <label for="acepto">
+                    He leído y acepto las Condiciones de Uso y la Política de Privacidad. Responsable: Fundación Canal. Finalidad: Gestionar tu cuenta de usuario y enviarte novedades sobre exposiciones y actividades. Derechos: Puedes acceder, rectificar y suprimir tus datos en esta web.
+                </label>
+            </div>
+
+            <button type="submit" class="btn-enviar">REGÍSTRATE</button>
+        </form>
+    </section>
+
+    <div id="usuario">
+        <img src="media/foto usuario.png" alt="#">
+    </div>
+
+
+    <div class="scroll-arriba">
+        <a href="">
+            <img class="Logo-arteurbano" src="media/logo.png" alt="Volver arriba">
+        </a>
+    </div>
+
+
+    <footer>
+        <div class="footer-columnas">
+            <div class="cont-col">
+                <h4>Visita</h4>
+                <a href="">Exposición</a>
+                <a href="">Artistas</a>
+                <a href="">Tickets</a>
+                <a href="">Ubicación</a>
+                <a href="">FAQ</a>
+            </div>
+            <div class="cont-col">
+                <h4>Legal</h4>
+                <a href="">Aviso legal</a>
+                <a href="">Política de protección de datos</a>
+                <a href="">Política de cookies</a>
+                <a href="">Opciones de cookies</a>
+                <a href="">Accesibilidad</a>
+                <a href="">Línea Ética</a>
+            </div>
+            <div class="cont-col">
+                <h4>Contacto</h4>
+                <p>Email:info@fundacioncanal.es</p>
+                <p>Tel.:+34 91 545 15 01</p>
+                <p>C/ Mateo Inurria, 2</p>
+                <p>28036 Madrid</p>
+            </div>
+            <div class="cont-col">
+                <h4>Horario</h4>
+                <p>Lun-Dom</p>
+                <p>10:00 - 20:00</p>
+                <p>Entrada: --</p>
+            </div>
+        </div>
+         <div class="footer-redes">
+            <a href="">
+                <i class="fa-brands fa-square-facebook" style="color: rgb(255, 255, 255);"></i>
+            </a>
+            <a href="">
+                 <i class="fa-brands fa-square-x-twitter" style="color: rgb(255, 255, 255);"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-square-instagram" style="color: rgb(255, 255, 255);"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-linkedin" style="color: rgb(255, 255, 255);"></i>
+             </a>
+            <a href="">
+                <i class="fa-brands fa-youtube" style="color: rgb(255, 255, 255);"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-tiktok" style="color: rgb(255, 255, 255);"></i>
+            </a>
+            <img src="media/img/Logo-Comunidad_Madrid.png" alt="">
+        </div>
+
+        <div class="footer-copy">
+            <p>© Fundación Canal, todos los derechos reservados</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
